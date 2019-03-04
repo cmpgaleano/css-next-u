@@ -1,0 +1,267 @@
+*{
+  font-family: Dancing Script;
+
+}
+body{
+  background-color: #02010a;
+  width: 90%;
+  margin:0 auto;
+  padding: 0 auto;
+  color: white;
+}
+img{
+  width: 100%;
+}
+/*Disposiciones generales del contenedor*/
+
+.contenedor {
+	margin: 0 auto;
+  width: 95%;
+	display: flex;
+	flex-flow: row wrap;
+}
+/*Encabezado*/
+
+header{
+  width: 100%;
+  background-color: #5b7989;
+  padding: 1%;
+  height: 80px;
+  display: block;
+  border-radius: 10px;
+}
+#Titulopag{
+  margin-left: 10px;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  font-size: 35px;
+}
+/*Menu*/
+
+nav,ul,li{
+  margin:10px;
+  padding: 2px;
+}
+a[href]{
+  text-decoration: underline;
+  color:white;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #02010a;
+}
+a:hover{
+  color:grey;
+  text-decoration: underline;
+}
+#button{
+  display: inline-flex;
+  text-align: justify;
+  float: right;
+  margin-top: -65px;
+  margin-right: 2%;
+  list-style: none;
+}
+/*Primera imagen*/
+
+#Primeraimagen{
+  background-color: #82c3a6;
+  width: 100%;
+}
+.imggato{
+  width: 60%;
+  margin-left: 15vw;
+  padding: 2%;
+}
+
+/*Sección 2 y 3 img*/
+
+#dosytresimg{
+   background-color: #d5c75f;
+   border: 1px;
+   width: 100%;
+   height: 500px;
+}
+
+.segundaimagen{
+  width: 40%;
+  padding: 10px;
+  margin-left: 30px;
+  margin-top: 30px;
+
+}
+.segundaimagen:hover{
+	transform: rotate(10deg);
+	transition-duration: 1s;
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+.terceraimagen{
+  width: 40%;
+  float: right;
+  height: 350px;
+  padding:10px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+.terceraimagen:hover{
+	transform: translate(20px, -5px);
+	transition-duration: 1s;
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+/*Aquì empieza el pie de pàgina*/
+
+#Pie{
+  width:100%;
+  background-color: #C6d5c5;
+  color: black !important;
+  display: inline-flex;
+}
+footer a[href]{
+  color:black;
+  text-shadow: none;
+  text-decoration: none !important;
+}
+footer a[href]:hover{
+  color:grey;
+}
+.columna1{
+margin-left: 40px;
+padding: 10px;
+}
+.columna2{
+  margin-left: 40px;
+  padding:10px;
+}
+.columna3{
+  margin-left: 40px;
+  padding: 10px;
+}
+.columna4{
+  margin-left: 40px;
+  padding: 10px;
+  font-size: 17px;
+}
+
+/*Imagenes paisajes*/
+.paisajes_1_3 div{
+	padding: 2%;
+	text-align: center;
+	float: inherit;
+	width: 29%;
+	height: 50%;
+  display: inline-flex;
+  margin-top:20px;
+
+}
+#paisajes_1{
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+#paisajes_2, #paisajes_4, #paisajes_6{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+}
+#paisajes_3{
+	-webkit-filter:sepia(80%);
+	filter: sepia(90%);
+}
+.paisajes_4_6 div{
+	padding: 2%;
+	text-align: center;
+	float: inherit;
+	width: 29%;
+	height: 60%;
+  display: inline-flex;
+  margin-top: -60px;
+}
+#paisajes_5{
+
+}
+
+
+/*Media para todos*/
+
+@media screen and (max-width: 960px){
+	.contenedor{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+/*Móvil*/
+
+@media screen and (max-width: 900px){
+  body{
+    width: 100%;
+    text-align: center;
+  }
+	.contenedor{
+		width: 100%;
+		margin: 0 auto;
+    text-align: center;
+	}
+	#Titulopag{
+		text-align: left;
+    font-size: 25px;
+	}
+  #button{
+    text-align: left;
+    font-size: 25px;
+  }
+  .menu{
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: left;
+
+  }
+  #Primeraimagen{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .pictures{
+    width: 100%;
+    height: auto;
+  }
+.imggato{
+	width: 90%;
+  margin:0;
+  padding:1%;
+}
+	.segundaimagen{
+    width: 90%;
+    margin:0;
+    padding:1%;
+	}
+	.terceraimagen{
+    width: 90%;
+    margin-right: 4vw;
+    padding:0;
+    height: 40%;
+	}
+	#Pie{
+		width: 100%;
+    display: block;
+    text-align: left;
+	}
+  .columna1{
+    width: 100%;
+    display: block;
+  }
+  .columna2{
+    width: 100%;
+    display: block;
+  }
+  .columna3{
+    width: 100%;
+    display: block;
+  }
+  .columna4{
+    width: 100%;
+    display: block;
+  }
+
+  #paisajes_1, #paisajes_2, #paisajes_3,#paisajes_4, #paisajes_5,#paisajes_6{
+    width: 100%;
+    display: block;
+    }
+}
